@@ -291,13 +291,13 @@ button:hover {
 
 /* Product titles */
 .shop-col h3 {
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin: 10px 0;
 }
 
 /* Pricing and volume text */
 .shop-col p {
-    font-size: 1em;
+    font-size: 1rem;
     color: #000000;
 }
 
