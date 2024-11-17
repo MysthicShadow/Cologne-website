@@ -284,10 +284,9 @@ button:hover {
 
 /* Style for the images inside each product column */
 .shop-col img {
-    width: 12rem; /* Makes the image take the full width of the container */
+    width: 10rem; /* Makes the image take the full width of the container */
     height: 20rem; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Product titles */
