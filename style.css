@@ -273,10 +273,10 @@ button:hover {
 }
 
 .shop-col {
-    flex: 1 1 calc(20% - 20px); /* Flex-grow, flex-shrink, and flex-basis */
+    
     box-sizing: border-box;
     background-color: #33a387;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #00000016;
     border-radius: 8px;
     text-align: center;
