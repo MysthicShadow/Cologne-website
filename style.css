@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+}
+
+/* Ensure the background covers the whole page */
+html, body {
+    height: 100%;   /* Ensure the page takes up full height */
+    margin: 0;      /* Remove default margin */
+    background: linear-gradient(90deg, rgb(112, 168, 152) 0%, rgb(67, 217, 170) 49%, rgb(29, 85, 134) 100%);  /* You can use a solid color or a gradient */
+}
+
+/*) to adjust the navigation bar (*/
+nav{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem calc((100vw - 1300px) / 2);
+}
+
+nav .logo {
+    flex:1;
+}
+/*) to adjust the icon/logo (*/
+nav img {
+    width: 60px;
+    padding: 0 2rem;
+    margin-top: 0.3rem;
+}
+
+/*) control over navigation button (*/
+nav a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    padding: 0 1.5rem;
+}
+
+.hero {
+    background: rgb(67,202,161);
+    background: linear-gradient(90deg, rgb(112, 168, 152) 0%, rgb(67, 217, 170) 49%, rgb(29, 85, 134) 100%);
+    width: 100%;                /* Ensure it takes up the full width of the viewport */
+    height: 100vh;              /* Set the height to 100% of the viewport height */
+    display: flex;              /* Use flex to center the content vertically and horizontally */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;               /* Ensure the container fills the height of the .hero */
+    width: 100%;                /* Make sure the container fills the width of .hero */
+    padding: 0 2rem;            /* Adjust padding as needed */
+    max-width: 1300px;          /* Keeps content centered and prevents it from stretching too far */
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(0, 0, 0);
+    padding: 0 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: rgb(0, 0, 0);
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(141, 141, 125);
+    color: rgb(255, 255, 255);
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.hero-image {
+    width: 105%;        /* Ensure the image fills most of the column */
+    height: auto;       /* Let the height adjust based on aspect ratio */
+    max-width: 1900px;   /* Optional: limit the maximum width */
+    object-fit: cover;  /* Make sure the image covers the area */
+}
+
+.hero-image:hover {
+    filter: drop-shadow(1px 10px 15px rgba(17, 98, 169, 0.925));
+}
+
+
+
+/*-----services-----*/
+
+.services {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.services h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.services-col {
+    display: flex;
+    flex-direction: column;         /* Stacks the elements vertically inside the column */
+    align-items: center;            /* Horizontally centers content inside the column */
+    justify-content: center;        /* Vertically centers content inside the column */
+    text-align: center;             /* Ensures text inside the columns is centered */
+    margin: 0 auto;                 /* Centers the columns horizontally */
+    padding: 1rem;
+}
+
+.services-col img {
+    width: 43rem; /* Makes the image take the full width of the container */
+    height: 24rem; /* Maintains the aspect ratio */
+    margin: 3px auto; /* Centers the image and adds space around it */
+    display: block; /* Makes sure the image behaves like a block-level element */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
+    padding-top: 5rem;
+}
+
+.services h2{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.services h3{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.services p {
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.services-col2 img {
+    width: 43rem; /* Makes the image take the full width of the container */
+    height: 24rem; /* Maintains the aspect ratio */
+    margin: 3px auto; /* Centers the image and adds space around it */
+    display: block; /* Makes sure the image behaves like a block-level element */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
+    padding-top: 50px;
+    align-items: center;
+}
+
+
+
+/*------ About -----*/
+
+.about{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding: 100px 100px; /* Adds padding around the section */
+}
+
+.about h1 {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 20px;
+    padding-top: 4rem;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 20px;
+    padding-top: 4rem;
+}
+
+.about h3 {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 20px;
+    padding-top: 4rem;
+}
+
+.about h4 {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 20px;
+    padding-top: 4rem;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #000000;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 0px auto;
+}
+
+.about-col img {
+    width: 100%; /* Makes the image take the full width of the container */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 900px; /* Limits the width for larger images */
+    margin: 10px auto; /* Centers the image and adds space around it */
+    display: block; /* Makes sure the image behaves like a block-level element */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
+}
+
+
+
+/*-----Shop------*/
+
+.shop {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding: 100px 100px; /* Adds padding around the section */
+}
+
+.shop h1 {
+    font-size: 2.1em;
+    color: #000000;
+    margin-bottom: 50px;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.shop h2 {
+    font-size: 2.4em;
+    color: #000000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.shop p {
+    font-size: 1em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between items */
+    margin-bottom: 40px;
+}
+
+.shop-col {
+    flex: 1 1 calc(20% - 20px); /* Flex-grow, flex-shrink, and flex-basis */
+    box-sizing: border-box;
+    background-color: #33a387;
+    padding: 20px;
+    border: 1px solid #00000016;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Style for the images inside each product column */
+.shop-col img {
+    width: 12rem; /* Makes the image take the full width of the container */
+    height: 20rem; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product titles */
+.shop-col h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Pricing and volume text */
+.shop-col p {
+    font-size: 1em;
+    color: #000000;
+}
+
+
+
+/*-----contact----*/
+
+.container {
+    position: relative;
+    min-height: 70vh;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact h1{
+   font-size: 36px;
+   font-weight: bold;
+   color: #000000; 
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.contact1 {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    position: relative;
+    padding: 20px 20px;
+    display: flex;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #33a387;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color:#000000;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
